@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif|Poiret+One|Great+Vibes|Corbel|La+Belle+Aurore);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,4 +53,34 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* Global Styles */
+header {
+  background-color: black;
+  color: white;
+  font-family: "Great Vibes", "La Belle Aurore", serif;
+  font-size: 4em;
+  margin: 0.3em;
+  padding: 0.8em 0.2em 0.6em 0.5em;
+  width: 30%;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  color: white;
+  display: inline-block;
+  font-family: "Poiret One", "Corbel", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 14px 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav li {
+  display: inline;
 }

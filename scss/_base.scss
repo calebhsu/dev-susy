@@ -1,0 +1,31 @@
+/* Global Styles */
+
+header {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: $font-title;
+  font-size: 4em;
+  margin: 0.3em;
+  padding: 0.8em 0.2em 0.6em 0.5em;
+  width: 30%;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  
+  width: 100%;
+  a {
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    font-family: $font-nav;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 14px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  li {
+    display: inline;
+  }
+}
