@@ -1,7 +1,7 @@
 /* Global Styles */
 
 header {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $black;
   color: rgba(255, 255, 255, 1);
   font-family: $font-title;
   font-size: 4em;
@@ -11,21 +11,45 @@ header {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: $black;
   text-align: center;
   
   width: 100%;
   a {
-    color: rgba(255, 255, 255, 1);
+    color: $white;
     display: inline-block;
     font-family: $font-nav;
     font-weight: bold;
-    letter-spacing: 2px;
-    padding: 14px 26px;
+    letter-spacing: 0.2em;
+    padding: 0.9em 1em;
     text-decoration: none;
     text-transform: uppercase;
+    @include transition(0.5s ease-in-out);
+  }
+  a:hover {
+    letter-spacing: 0.3em;
   }
   li {
     display: inline;
+  }
+}
+
+/* Special CSS */
+#flowers {
+  text-align: center;
+  .fl {
+    display: inline-block;
+    list-style: none;
+    margin: 1em 0;
+
+    a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 60%;
+    }
   }
 }
