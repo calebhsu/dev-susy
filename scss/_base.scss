@@ -1,13 +1,14 @@
 /* Global Styles */
 html, body {
   background-color: rbga(0, 0, 0, 1);
+  overflow-x: hidden;
 }
 
 header {
   color: rgba(0, 0, 0, 0.9);
   margin: 0.3em;
   padding: 1em 0.2em 0.4em 0.5em;
-  width: 50%;
+  width: 80%;
   h1 {
     font-family: $font-title;
     font-size: 3.8em;
@@ -45,13 +46,29 @@ nav {
 }
 
 section {
-  color: $black;
-  font-family: $font-body;
-  line-height: 1.4em;
-  text-align: center;
+  
 }
 
 /* Special CSS */
+#banner {
+  background:url(../img/header.jpg) no-repeat 0 0;
+  @include background-size(cover);
+  height: 25em;
+  position: fixed;
+}
+
+#promo {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 5px double $black;
+  color: $black;
+  font-family: $font-body;
+  line-height: 1.4em;
+  padding: 4em 3em;
+  margin: 5em auto;
+  text-align: center;
+  width: 40%;
+}
+
 .container {
   margin: 2em auto;
   text-align: justify;
@@ -86,8 +103,3 @@ section {
     }
   }
 }
-
-.promo {
-  border: 5px double $black;
-  padding: 2.7em 3em;
-} 
