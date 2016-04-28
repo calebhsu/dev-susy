@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif|Poiret+One|Great+Vibes|Corbel|La+Belle+Aurore);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif|Poiret+One|Great+Vibes|Corbel|La+Belle+Aurore|Cedarville+Cursive|Josefin+Slab|Josefin+Sans);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,26 +56,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Global Styles */
+html, body {
+  background-color: rbga(0, 0, 0, 1);
+}
+
 header {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: white;
-  font-family: "Great Vibes", "La Belle Aurore", serif;
-  font-size: 4em;
+  color: rgba(0, 0, 0, 0.9);
   margin: 0.3em;
-  padding: 0.8em 0.2em 0.6em 0.5em;
-  width: 30%;
+  padding: 1em 0.2em 0.4em 0.5em;
+  width: 50%;
+}
+header h1 {
+  font-family: "Great Vibes", "La Belle Aurore", serif;
+  font-size: 3.8em;
+}
+header p {
+  font-family: "Josefin Slab", serif;
+  font-size: 1em;
+  margin: 0 4em;
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   width: 100%;
 }
 nav a {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   display: inline-block;
   font-family: "Poiret One", "Corbel", sans-serif;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-weight: 600;
   letter-spacing: 0.2em;
   padding: 0.9em 1em;
   text-decoration: none;
@@ -92,7 +103,20 @@ nav li {
   display: inline;
 }
 
+section {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Josefin Sans", "Corbel", sans-serif;
+  line-height: 1.4em;
+  text-align: center;
+}
+
 /* Special CSS */
+.container {
+  margin: 2em auto;
+  text-align: justify;
+  width: 75%;
+}
+
 #flowers {
   text-align: center;
 }
@@ -108,4 +132,9 @@ nav li {
 }
 #flowers .fl img {
   width: 60%;
+}
+
+.promo {
+  border: 5px double rgba(0, 0, 0, 0.8);
+  padding: 2.7em 3em;
 }
