@@ -95,6 +95,51 @@ nav {
   width: 40%;
 }
 
+.color {
+  display: inline-block;
+  font-family: $font-color;
+  
+  p {
+    padding: 2em;
+  }
+
+  .palette {
+    float: left;
+    height: 5em;
+    width: 5em;
+    margin: 0.8em;
+  } /* palette */
+
+  /* palette colors */
+  .red {
+    background: red;
+  }
+  .orange {
+    background: orange;
+  }
+  .yellow {
+    background: yellow;
+  }
+  .green {
+    background: green;
+  }
+  .blue {
+    background: blue;
+  }
+  .purple {
+    background: purple;
+  }
+  .black {
+    background: black;
+  }
+  .brown {
+    background: brown;
+  }
+  .white {
+    background: white;
+  }
+}
+
 .container {
   margin: 2em auto;
   text-align: justify;
