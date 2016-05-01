@@ -160,6 +160,7 @@ nav {
   margin: 2em auto;
   text-align: justify;
   width: 75%;
+  overflow: hidden;
 }
 
 #intro {
@@ -176,11 +177,27 @@ nav {
   text-align: center;
   .fl {
     display: inline-block;
+    font-family: $font-body;
     list-style: none;
     margin: 1em 0.3em;
+    position: relative;
+    
+
+    div {
+      background-color: rgba(255, 255, 255, 0.8);
+      bottom: 1.1em;
+      display: none;
+      font-size: 0.95em;
+      left: 0;
+      max-width: 10.75em;
+      padding: 1em;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
     span {
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: $black;
       color: white;
       display: block;
       font-family: $font-flower;
@@ -196,12 +213,6 @@ nav {
     img {
       padding: 0 auto;
       margin: 0 auto;
-      width: 12em;
-    }
-
-    .toggle {
-      background-color: rgba(255, 255, 255, 0.7);
-      display: none;
       width: 12em;
     }
   }

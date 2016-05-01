@@ -1,14 +1,24 @@
 $(document).ready(function(){
 
   /* Dropdown Toggles */
-  $(".fl").click(function(){
-      $(".fl1").slideToggle("slow");
+  $("#toggle1").click(function(){
+    $("#fl1").slideToggle("slow");
   });
-  $("#second").click(function(){
-      $(".stanza2").slideToggle("slow");
+
+  $("#toggle2").click(function(){
+    $(".fl2").slideToggle("slow");
   });
-  $("#third").click(function(){
-      $(".stanza3").slideToggle("slow");
+
+  $("#toggle3").click(function(){
+    $(".fl3").slideToggle("slow");
+  });
+
+  $("#toggle4").click(function(){
+    $(".fl4").slideToggle("slow");
+  });
+
+  $("#toggle5").click(function(){
+    $(".fl5").slideToggle("slow");
   });
 
   $(".box").hover(function(){
