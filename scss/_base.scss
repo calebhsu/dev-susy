@@ -102,8 +102,12 @@ nav {
 }
 
 .color {
+  border-bottom: 1px solid $grey;
   display: inline-block;
   font-family: $font-color;
+  margin-bottom: 0.5em 0 0.5em;
+  overflow-x: hidden;
+  width: 100%;
   
   p {
     padding: 2em;
@@ -138,6 +142,9 @@ nav {
   .purple {
     background: rgba(188, 148, 183, 1);
   }
+  .pink {
+    background: rgba(244, 159, 172, 1);
+  }
   .black {
     background: $black;
   }
@@ -153,6 +160,16 @@ nav {
   margin: 2em auto;
   text-align: justify;
   width: 75%;
+}
+
+#intro {
+  border: 0.2em double $black;
+  font-family: $font-body;
+  font-size: 1.25em; 
+  line-height: 1.5em;
+  padding: 2em 4em;
+  margin: 1em 4em 2em;
+  text-align: justify;
 }
 
 #flowers {

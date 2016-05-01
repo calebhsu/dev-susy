@@ -164,8 +164,12 @@ nav li {
 }
 
 .color {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   display: inline-block;
   font-family: "Lato", "Open Sans", "Corbel", Helvetica, sans-serif;
+  margin-bottom: 0.5em 0 0.5em;
+  overflow-x: hidden;
+  width: 100%;
   /* palette */
   /* palette colors */
 }
@@ -199,6 +203,9 @@ nav li {
 .color .purple {
   background: #bc94b7;
 }
+.color .pink {
+  background: #f49fac;
+}
 .color .black {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -213,6 +220,16 @@ nav li {
   margin: 2em auto;
   text-align: justify;
   width: 75%;
+}
+
+#intro {
+  border: 0.2em double rgba(0, 0, 0, 0.8);
+  font-family: "Josefin Sans", "Corbel", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 2em 4em;
+  margin: 1em 4em 2em;
+  text-align: justify;
 }
 
 #flowers {
