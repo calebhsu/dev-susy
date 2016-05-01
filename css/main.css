@@ -58,6 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Global Styles */
 html, body {
   background-color: rbga(0, 0, 0, 1);
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -66,7 +67,8 @@ footer {
   bottom: 0;
   color: rgba(255, 255, 255, 0.9);
   font-family: "Josefin Slab", serif;
-  position: absolute;
+  margin-top: 5em;
+  position: relative;
   width: 100%;
   /* contact */
 }
@@ -104,6 +106,10 @@ header p {
   font-family: "Josefin Slab", serif;
   font-size: 1em;
   margin: 0 4em;
+}
+
+main {
+  overflow: auto;
 }
 
 nav {
@@ -173,31 +179,34 @@ nav li {
   margin: 0.8em;
 }
 .color .red {
-  background: red;
+  background: #ac2325;
 }
 .color .orange {
-  background: orange;
+  background: #f49054;
 }
 .color .yellow {
-  background: yellow;
+  background: #fde05e;
 }
 .color .green {
-  background: green;
+  background: #bcd74a;
 }
 .color .blue {
-  background: blue;
+  background: #7db4d3;
+}
+.color .dark-blue {
+  background: #104577;
 }
 .color .purple {
-  background: purple;
+  background: #bc94b7;
 }
 .color .black {
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
 }
 .color .brown {
-  background: brown;
+  background: #906147;
 }
 .color .white {
-  background: white;
+  background: rgba(248, 224, 200, 0.5);
 }
 
 .container {

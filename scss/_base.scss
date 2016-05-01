@@ -1,6 +1,7 @@
 /* Global Styles */
 html, body {
   background-color: rbga(0, 0, 0, 1);
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -9,7 +10,8 @@ footer {
   bottom: 0;
   color: $white;
   font-family: $font-subtitle;
-  position: absolute;
+  margin-top: 5em;
+  position: relative;
   width: 100%;
 
   #contact {
@@ -47,6 +49,10 @@ header {
     font-size: 1em;
     margin: 0 4em;
   }
+}
+
+main {
+  overflow: auto;
 }
 
 nav {
@@ -112,31 +118,34 @@ nav {
 
   /* palette colors */
   .red {
-    background: red;
+    background: rgba(172, 35, 37, 1);
   }
   .orange {
-    background: orange;
+    background: rgba(244, 144, 84, 1);
   }
   .yellow {
-    background: yellow;
+    background: rgba(253, 224, 94, 1);
   }
   .green {
-    background: green;
+    background: rgba(188, 215, 74, 1);
   }
   .blue {
-    background: blue;
+    background: rgba(125, 180, 211, 1);
+  }
+  .dark-blue {
+    background: rgba(16, 69, 119, 1);
   }
   .purple {
-    background: purple;
+    background: rgba(188, 148, 183, 1);
   }
   .black {
-    background: black;
+    background: $black;
   }
   .brown {
-    background: brown;
+    background: rgba(144, 97, 71, 1);
   }
   .white {
-    background: white;
+    background: rgba(248, 224, 200, 0.5);
   }
 }
 
