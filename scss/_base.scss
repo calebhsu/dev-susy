@@ -4,6 +4,35 @@ html, body {
   overflow-x: hidden;
 }
 
+footer {
+  background-color: $black;
+  bottom: 0;
+  color: $white;
+  font-family: $font-subtitle;
+  position: absolute;
+  width: 100%;
+
+  #contact {
+    padding: 0.8em;
+    #title {
+      font-size: 1.4em;
+      line-height: 2em;
+      text-align: center;
+    }
+    #address {
+      font-family: $font-body;
+      line-height: 1.5em;
+      padding: 0 0.75em;
+    }
+  } /* contact */
+  #copyright {
+    background-color: $black;
+    padding: 0.8em;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 header {
   color: rgba(0, 0, 0, 0.9);
   margin: 0.3em;
@@ -45,15 +74,12 @@ nav {
   }
 }
 
-section {
-  
-}
-
 /* Special CSS */
 #banner {
   background:url(../img/header.jpg) no-repeat 0 0;
   @include background-size(cover);
   height: 25em;
+  width: 100%;
   position: fixed;
 }
 
@@ -99,6 +125,12 @@ section {
     img {
       padding: 0 auto;
       margin: 0 auto;
+      width: 12em;
+    }
+
+    .toggle {
+      background-color: rgba(255, 255, 255, 0.7);
+      display: none;
       width: 12em;
     }
   }

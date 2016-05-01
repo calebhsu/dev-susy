@@ -61,6 +61,35 @@ html, body {
   overflow-x: hidden;
 }
 
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Josefin Slab", serif;
+  position: absolute;
+  width: 100%;
+  /* contact */
+}
+footer #contact {
+  padding: 0.8em;
+}
+footer #contact #title {
+  font-size: 1.4em;
+  line-height: 2em;
+  text-align: center;
+}
+footer #contact #address {
+  font-family: "Josefin Sans", "Corbel", sans-serif;
+  line-height: 1.5em;
+  padding: 0 0.75em;
+}
+footer #copyright {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.8em;
+  text-align: center;
+  width: 100%;
+}
+
 header {
   color: rgba(0, 0, 0, 0.9);
   margin: 0.3em;
@@ -112,6 +141,7 @@ nav li {
   -webkit-background-size: cover;
   background-size: cover;
   height: 25em;
+  width: 100%;
   position: fixed;
 }
 
@@ -157,5 +187,10 @@ nav li {
 #flowers .fl img {
   padding: 0 auto;
   margin: 0 auto;
+  width: 12em;
+}
+#flowers .fl .toggle {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
   width: 12em;
 }
