@@ -53,6 +53,24 @@ header {
 
 main {
   overflow: auto;
+
+  section {
+    display: inline-block;
+    margin: 3.5em;
+
+    .general {
+      float: left;
+      font-family: $font-body;
+      line-height: 1.8em;
+      margin-top: 1em;
+      text-align: justify;
+      width: 50%;
+    }
+    .ad {
+      float: right;
+      max-width: 45%;
+    }
+  }  
 }
 
 nav {
@@ -80,13 +98,15 @@ nav {
   }
 }
 
+
 /* Special CSS */
 #banner {
   background:url(../img/header.jpg) no-repeat 0 0;
   @include background-size(cover);
+  clear: both;
   height: 25em;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 #promo {
@@ -94,11 +114,12 @@ nav {
   border: 5px double $black;
   color: $black;
   font-family: $font-body;
+  font-size: 1.1em;
   line-height: 1.4em;
   padding: 4em 3em;
-  margin: 5em auto;
+  margin: 4em auto;
   text-align: center;
-  width: 40%;
+  width: 50%;
 }
 
 .color {

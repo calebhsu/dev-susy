@@ -111,6 +111,22 @@ header p {
 main {
   overflow: auto;
 }
+main section {
+  display: inline-block;
+  margin: 3.5em;
+}
+main section .general {
+  float: left;
+  font-family: "Josefin Sans", "Corbel", sans-serif;
+  line-height: 1.8em;
+  margin-top: 1em;
+  text-align: justify;
+  width: 50%;
+}
+main section .ad {
+  float: right;
+  max-width: 45%;
+}
 
 nav {
   background-color: rgba(0, 0, 0, 0.8);
@@ -146,9 +162,10 @@ nav li {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  clear: both;
   height: 25em;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 #promo {
@@ -156,11 +173,12 @@ nav li {
   border: 5px double rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
   font-family: "Josefin Sans", "Corbel", sans-serif;
+  font-size: 1.1em;
   line-height: 1.4em;
   padding: 4em 3em;
-  margin: 5em auto;
+  margin: 4em auto;
   text-align: center;
-  width: 40%;
+  width: 50%;
 }
 
 .color {
