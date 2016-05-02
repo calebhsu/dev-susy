@@ -258,7 +258,7 @@ nav li {
 #intro {
   border: 0.2em double rgba(0, 0, 0, 0.8);
   font-family: "Josefin Sans", "Corbel", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.2em;
   line-height: 1.5em;
   padding: 2em 4em;
   margin: 1em 4em 2em;
@@ -277,6 +277,7 @@ nav li {
   position: relative;
   /* div */
   /* span */
+  /* span:hover */
   /* img */
 }
 #flowers .fl div {
@@ -322,15 +323,25 @@ nav li {
 #flowers .fl span {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  cursor: pointer;
   display: block;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.08em;
   margin: -0.5em 0;
-  padding: 0.6em 0;
+  padding: 0.8em 0 0.6em;
   text-decoration: none;
   text-transform: uppercase;
+  -moz-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+#flowers .fl span:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.18em;
 }
 #flowers .fl img {
   padding: 0 auto;
