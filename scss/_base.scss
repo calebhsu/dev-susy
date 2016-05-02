@@ -175,6 +175,7 @@ nav {
 
 #flowers {
   text-align: center;
+
   .fl {
     display: inline-block;
     font-family: $font-body;
@@ -182,19 +183,49 @@ nav {
     margin: 1em 0.3em;
     position: relative;
     
-
     div {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.85);
       bottom: 1.1em;
       display: none;
-      font-size: 0.95em;
       left: 0;
+      line-height: 1.2em;
       max-width: 10.75em;
       padding: 1em;
       position: absolute;
       right: 0;
       top: 0;
-    }
+      
+      a {
+        border: 0.1em solid $black;
+        background-color: white;
+        bottom: 1em;
+        color: $black;
+        font-size: 0.7em;
+        letter-spacing: 0.07em;
+        left: 3.25em;
+        padding: 0.4em 0.55em;
+        position: absolute;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      a:hover {
+        border: 0.1em solid $white;
+        background-color: $green;
+        color: $white;
+      }
+
+      p {
+        font-size: 0.85em;
+        margin: 1em 0.2em;
+      }
+
+      strong {
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: lowercase;
+      }
+    } /* div */
 
     span {
       background-color: $black;
@@ -208,12 +239,12 @@ nav {
       padding: 0.6em 0;
       text-decoration: none;
       text-transform: uppercase;
-    }
+    } /* span */
 
     img {
       padding: 0 auto;
       margin: 0 auto;
       width: 12em;
-    }
-  }
+    } /* img */
+  } /* .fl */
 }
