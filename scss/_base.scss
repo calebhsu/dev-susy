@@ -52,25 +52,33 @@ header {
 }
 
 main {
-  overflow: auto;
-
   section {
-    display: inline-block;
-    margin: 3.5em;
-
-    .general {
-      float: left;
-      font-family: $font-body;
-      line-height: 1.8em;
-      margin-top: 1em;
-      text-align: justify;
-      width: 50%;
-    }
+    display: inline;
+    margin: 3em 3.5em 0;
+    
     .ad {
       float: right;
-      max-width: 45%;
+      width: 40%;
     }
-  }  
+    .text {
+      float: left;  
+      width: 50%;
+
+      em {
+        font-family: $font-title;
+        font-size: 3.8em;
+        padding-right: 0.2em;
+      }
+      p {
+        float: left;
+        font-family: $font-body;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        margin-top: 2em;
+        text-align: justify;
+      } /* .general */
+    } /* text */    
+  } /* section */
 }
 
 nav {
@@ -100,26 +108,26 @@ nav {
 
 
 /* Special CSS */
-#banner {
-  background:url(../img/header.jpg) no-repeat 0 0;
+#promo {
+  background: url(../img/header.jpg) no-repeat 0 0;
   @include background-size(cover);
   clear: both;
-  height: 25em;
+  padding: 5em 0;
+  margin: 0 auto;
   width: 100%;
-  position: absolute;
-}
 
-#promo {
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 5px double $black;
-  color: $black;
-  font-family: $font-body;
-  font-size: 1.1em;
-  line-height: 1.4em;
-  padding: 4em 3em;
-  margin: 4em auto;
-  text-align: center;
-  width: 50%;
+  p {
+    border: 5px double $black;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: $black;
+    font-family: $font-body;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3.5em 3em;
+    width: 60%;
+  }
 }
 
 .color {
@@ -178,10 +186,14 @@ nav {
 }
 
 .container {
-  margin: 2em auto;
+  margin: 3em auto;
   text-align: justify;
   width: 75%;
   overflow: hidden;
+}
+
+.hide {
+  display: none;
 }
 
 #intro {

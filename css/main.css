@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Monserrat|Poiret+One|Great+Vibes|Corbel|La+Belle+Aurore|Cedarville+Cursive|Josefin+Slab|Josefin+Sans|Lato);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Century|Monserrat|Poiret+One|Great+Vibes|Corbel|La+Belle+Aurore|Cedarville+Cursive|Josefin+Slab|Josefin+Sans|Lato);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -109,23 +109,34 @@ header p {
 }
 
 main {
-  overflow: auto;
+  /* section */
 }
 main section {
-  display: inline-block;
-  margin: 3.5em;
-}
-main section .general {
-  float: left;
-  font-family: "Josefin Sans", "Corbel", sans-serif;
-  line-height: 1.8em;
-  margin-top: 1em;
-  text-align: justify;
-  width: 50%;
+  display: inline;
+  margin: 3em 3.5em 0;
+  /* text */
 }
 main section .ad {
   float: right;
-  max-width: 45%;
+  width: 40%;
+}
+main section .text {
+  float: left;
+  width: 50%;
+  /* .general */
+}
+main section .text em {
+  font-family: "Great Vibes", "La Belle Aurore", serif;
+  font-size: 3.8em;
+  padding-right: 0.2em;
+}
+main section .text p {
+  float: left;
+  font-family: "Josefin Sans", "Corbel", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-top: 2em;
+  text-align: justify;
 }
 
 nav {
@@ -156,29 +167,28 @@ nav li {
 }
 
 /* Special CSS */
-#banner {
+#promo {
   background: url(../img/header.jpg) no-repeat 0 0;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   clear: both;
-  height: 25em;
+  padding: 5em 0;
+  margin: 0 auto;
   width: 100%;
-  position: absolute;
 }
-
-#promo {
-  background-color: rgba(255, 255, 255, 0.6);
+#promo p {
   border: 5px double rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.8);
   font-family: "Josefin Sans", "Corbel", sans-serif;
   font-size: 1.1em;
   line-height: 1.4em;
-  padding: 4em 3em;
-  margin: 4em auto;
   text-align: center;
-  width: 50%;
+  margin: 0 auto;
+  padding: 3.5em 3em;
+  width: 60%;
 }
 
 .color {
@@ -235,10 +245,14 @@ nav li {
 }
 
 .container {
-  margin: 2em auto;
+  margin: 3em auto;
   text-align: justify;
   width: 75%;
   overflow: hidden;
+}
+
+.hide {
+  display: none;
 }
 
 #intro {
