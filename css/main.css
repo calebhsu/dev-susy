@@ -55,6 +55,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+.clearfixed:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
 /* Global Styles */
 html, body {
   background-color: rbga(0, 0, 0, 1);
@@ -247,7 +253,6 @@ nav li {
 .container {
   margin: 3em auto;
   text-align: justify;
-  width: 75%;
   overflow: hidden;
 }
 
@@ -266,6 +271,11 @@ nav li {
 }
 
 #flowers {
+  width: 81.66667%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  margin-left: 9.16667%;
   text-align: center;
   /* .fl */
 }

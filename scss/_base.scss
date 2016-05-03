@@ -188,7 +188,6 @@ nav {
 .container {
   margin: 3em auto;
   text-align: justify;
-  width: 75%;
   overflow: hidden;
 }
 
@@ -207,6 +206,8 @@ nav {
 }
 
 #flowers {
+  @include span(10);
+  @include push(1);
   text-align: center;
 
   .fl {
