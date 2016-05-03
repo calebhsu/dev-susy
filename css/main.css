@@ -76,6 +76,7 @@ footer {
   margin-top: 5em;
   position: relative;
   width: 100%;
+  float: left;
   /* contact */
 }
 footer #contact {
@@ -95,7 +96,6 @@ footer #copyright {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.8em;
   text-align: center;
-  width: 100%;
 }
 
 header {
@@ -118,8 +118,9 @@ main {
   /* section */
 }
 main section {
+  width: 100%;
+  float: left;
   display: inline;
-  margin: 3em 3.5em 0;
   /* text */
 }
 main section .ad {
@@ -149,6 +150,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   width: 100%;
+  float: left;
 }
 nav a {
   color: rgba(255, 255, 255, 0.9);
@@ -254,6 +256,7 @@ nav li {
   margin: 3em auto;
   text-align: justify;
   overflow: hidden;
+  width: 75%;
 }
 
 .hide {
@@ -271,13 +274,16 @@ nav li {
 }
 
 #flowers {
-  width: 81.66667%;
+  width: 100%;
   float: left;
-  margin-left: 0.83333%;
-  margin-right: 0.83333%;
-  margin-left: 9.16667%;
+  margin: 0 auto;
   text-align: center;
   /* .fl */
+}
+#flowers:nth-child(1n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: none;
 }
 #flowers .fl {
   display: inline-block;
@@ -357,4 +363,18 @@ nav li {
   padding: 0 auto;
   margin: 0 auto;
   width: 12em;
+}
+
+/* Media Query Stuff */
+@media (min-width: 1px) and (max-width: 480px) {
+  #flower {
+    width: 100%;
+    float: left;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  #flower {
+    width: 100%;
+    float: left;
+  }
 }
